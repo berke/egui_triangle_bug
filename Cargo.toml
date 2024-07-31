@@ -1,0 +1,17 @@
+[package]
+name = "egui_triangle_bug"
+edition = "2021"
+
+[dependencies.anyhow]
+version = "1"
+
+[dependencies.eframe]
+version = "0.28.1"
+default-features = false
+features = ["default"]
+
+[dependencies.egui_plot]
+version = "0.28.1"
+
+[patch.crates-io]
+egui_plot = { git = "https://github.com/emilk/egui_plot", branch = "main" }
